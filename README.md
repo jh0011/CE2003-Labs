@@ -19,3 +19,5 @@ Certain 8-bit values can be stored in 6-bit user-defined address spaces.
 - Enable write_en to write the 8-bit reg_d value into the 6-bit memory address' location.
 
 - To access the stored value in Lab2_mem, set the d_in to the address location, and enable show_reg.
+
+![Sources in Xilinx Project](Lab_2/Images/sources_lab2.png)
