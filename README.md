@@ -22,3 +22,13 @@ Certain 8-bit values can be stored in 6-bit user-defined address spaces.
 
 ![Sources in Xilinx Project](Lab_2/Images/sources_lab2.PNG)
 ![Waveform after simulation](Lab_2/Images/waveform_lab2.PNG)
+
+## Lab 3
+https://github.com/jh0011/CE2003-Labs/tree/main/Lab_3
+
+Pipelined 2's complement array multiplier.
+
+![Waveform for the pipelined implementation](Lab_3/Images/Waveform-pipelined.PNG)
+![Resources used](Lab_3/Images/Resources-used.PNG)
+![Timing summary for un-pipelined implementation](Lab_3/Images/Timing-summary-unpipelined.PNG)
+![Timing summary for pipelined implementation](Lab_3/Images/Timing-summary-pipelined.PNG)
