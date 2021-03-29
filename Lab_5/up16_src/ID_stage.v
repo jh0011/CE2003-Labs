@@ -145,24 +145,18 @@ module DF_control (
 	assign Data2_muxCont = 2'b00;  	// no dataforwarding
 	*/
 
-	/* //Task 1
+	/* //Task 1 && Task 2
 	// You will need to comment out the above two statements and implement data forwarding control here
 	always @ *
 	begin
-		if (RR1_rd == EX_RFdest_rd)
+		if (RR1_rd == EX_RFdest_rd && EX_RFwriteEnab == 1)
 		begin
-			if (EX_RFwriteEnab)
-			begin
-				Data1_muxCont = 2'b01;
-			end
+			Data1_muxCont = 2'b01;
 		end
-
-		else if (RR1_rd == Mem_RFdest_rd)
+		
+		else if (RR1_rd == Mem_RFdest_rd && Mem_RFwriteEnab == 1)
 		begin
-			if (Mem_RFwriteEnab)
-			begin
-				Data1_muxCont = 2'b10;
-			end
+			Data1_muxCont = 2'b10;
 		end
 
 		else
@@ -170,20 +164,14 @@ module DF_control (
 			Data1_muxCont = 2'b00;
 		end
 
-		if (RR2_rs == EX_RFdest_rd)
+		if (RR2_rs == EX_RFdest_rd && EX_RFwriteEnab == 1)
 		begin
-			if (EX_RFwriteEnab)
-			begin
-				Data2_muxCont = 2'b01;
-			end
+			Data2_muxCont = 2'b01;
 		end
 
-		else if (RR2_rs == Mem_RFdest_rd)
+		else if (RR2_rs == Mem_RFdest_rd && Mem_RFwriteEnab == 1)
 		begin
-			if (Mem_RFwriteEnab)
-			begin
-				Data2_muxCont = 2'b10;
-			end
+			Data2_muxCont = 2'b10;
 		end
 
 		else
