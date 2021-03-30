@@ -47,3 +47,12 @@ Pipelining and Datapaths
 ![Waveform](Lab_4/Images/waveform.PNG)
 
 ![Post-synthesis waveform](Lab_4/Images/post-synthesis-waveform.PNG)
+
+## Lab 5
+https://github.com/jh0011/CE2003-Labs/tree/main/Lab_5
+
+uP16
+
+![Design timing summary](Lab_5/Images/design-timing-summary.PNG)
+
+![Task 2 Waveform](Lab_5/Images/task2-waveform.PNG)
